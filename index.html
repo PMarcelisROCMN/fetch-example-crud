@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Words App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add Words</h2>
+        <form id="wordForm">
+            <input type="text" id="word" placeholder="Enter a word..." required>
+            <button type="submit">Add Word</button>
+        </form>
+
+        <button id="showWords">Show Words</button>
+
+        <!-- Modal for displaying words -->
+        <div id="wordsModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Your Word List</h3>
+                <ul id="wordsList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
